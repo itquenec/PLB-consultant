@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
         v.memory = 1024
         v.cpus = 1
       end
-      workernode.vm.provision "shell", path: "bootstrap.sh"
+      workernode.vm.provision "shell", path: "bootstrap_worker.sh"
     end
   end
 
